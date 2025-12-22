@@ -6,7 +6,7 @@ function "testing/reproduce_bug_0" {
   stack {
     var $payload {
       value = {}
-        |set:"role":1 > 2 ? "buyer":"seller"
+        |set:"role":(1 > 2 ? "buyer"):"seller"
     }
   }
 
