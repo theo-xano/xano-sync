@@ -5,6 +5,7 @@ table "table_name with a space" {
     int id
     timestamp created_at?=now
     json testjson?
+    decimal jygj?
   }
 
   index = [
