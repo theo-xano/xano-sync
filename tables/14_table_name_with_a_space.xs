@@ -6,6 +6,8 @@ table "table_name with a space" {
     timestamp created_at?=now
     json testjson?
     decimal jygj?
+    text Capital? filters=trim
+    text capital? filters=trim
   }
 
   index = [
