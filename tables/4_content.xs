@@ -10,6 +10,9 @@ table content {
     }
   
     email email? filters=trim
+    int projects_id? {
+      table = "projects"
+    }
   }
 
   index = [
