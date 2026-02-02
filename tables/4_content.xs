@@ -13,6 +13,10 @@ table content {
     int projects_id? {
       table = "projects"
     }
+  
+    int trigger_log_id? {
+      table = "trigger_log"
+    }
   }
 
   index = [
