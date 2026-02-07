@@ -6,6 +6,6 @@ realtime_channel test {
     nested_channels  : false
     message_history  : 50
     auth_channel     : false
-    presence         : false
+    presence         : true
   }
 }
