@@ -7,5 +7,5 @@ workspace "first test" {
     sql_columns      : true
   }
 
-  realtime = {canonical: "YsZPOkOiHcXC5CcjZEgNWrVR6OM"}
+  realtime = {canonical: "ts7MwAJ5o3kOKgvnD0xhNc6KWAM"}
 }
