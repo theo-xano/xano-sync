@@ -35,6 +35,6 @@ realtime_trigger logIt {
     } as $realtime_logs1
   }
 
-  response = "Hi Realtime User"
+  response = "FROM OG WORKSPACE: Hi Realtime User"
   actions = {message: true, join: true}
 }
