@@ -1,5 +1,5 @@
 realtime_channel test {
-  public_messaging = {active: false}
+  public_messaging = {auth: false}
   private_messaging = {active: false}
   settings = {
     anonymous_clients: true
