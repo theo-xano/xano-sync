@@ -10,9 +10,9 @@ query content verb=GET {
       return = {type: "list"}
     } as $content
   
-    function.run queryCheck as $func1
+    !function.run queryCheck as $func1
   }
 
-  response = $content
+  response = $env.$http_headers
   middleware = {pre: [{name: "test 1"}, {name: "test 2"}]}
 }
