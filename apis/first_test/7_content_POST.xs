@@ -29,7 +29,7 @@ query content verb=POST {
     } as $content1
   
     var $x1 {
-      value = $env.$request_uri
+      value = $env.$http_headers.Origin
     }
   }
 
