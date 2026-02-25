@@ -4,6 +4,7 @@ table stream_check {
   schema {
     int id
     timestamp created_at?=now
+    text name? filters=trim
   }
 
   index = [
