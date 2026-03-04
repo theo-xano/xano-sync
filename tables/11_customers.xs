@@ -15,7 +15,9 @@ table customers {
   
     json[1:100] profile?
     object[:200] profile_obj? {
-      schema
+      schema {
+        text base64? filters=trim
+      }
     }
   }
 
