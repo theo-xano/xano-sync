@@ -14,6 +14,9 @@ table customers {
     text address? filters=trim
   
     json[1:100] profile?
+    object[:200] profile_obj? {
+      schema
+    }
   }
 
   index = [
