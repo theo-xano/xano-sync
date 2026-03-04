@@ -3,12 +3,17 @@ table customers {
 
   schema {
     int id
-    timestamp created_at?=now
+    timestamp created_at?=now {
+      visibility = "private"
+    }
+  
     text Name? filters=trim|pattern:"/^[\\p{L}\\p{Nd}\\s'.,_()@#\\/+\\-]{0,30}$/u":"Invalid name"
     int Pincode?
   
     // Customer's physical address
     text address? filters=trim
+  
+    json[1:100] profile?
   }
 
   index = [

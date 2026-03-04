@@ -3,7 +3,10 @@ table trigger_log {
 
   schema {
     int id
-    timestamp created_at?=now
+    timestamp created_at?=now {
+      visibility = "private"
+    }
+  
     object[] someList? {
       schema {
         text id? filters=trim

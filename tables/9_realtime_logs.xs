@@ -3,7 +3,9 @@ table realtime_logs {
 
   schema {
     int id
-    timestamp created_at?=now
+    timestamp created_at?=now {
+      visibility = "private"
+    }
   }
 
   index = [

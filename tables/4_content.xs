@@ -3,7 +3,10 @@ table content {
 
   schema {
     int id
-    timestamp created_at?=now
+    timestamp created_at?=now {
+      visibility = "private"
+    }
+  
     text content? filters=trim
     vector? embeddings? {
       size = 3

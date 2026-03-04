@@ -3,7 +3,10 @@ table projects {
 
   schema {
     int id
-    timestamp created_at?=now
+    timestamp created_at?=now {
+      visibility = "private"
+    }
+  
     text name? filters=trim
     text description? filters=trim
     int duration_in_weekss?

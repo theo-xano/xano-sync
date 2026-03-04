@@ -3,7 +3,10 @@ table "table_name with a space" {
 
   schema {
     int id
-    timestamp created_at?=now
+    timestamp created_at?=now {
+      visibility = "private"
+    }
+  
     json testjson?
     decimal jygj?
     text Capital? filters=trim

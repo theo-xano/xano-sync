@@ -3,7 +3,9 @@ table "🅵Emoji" {
 
   schema {
     int id
-    timestamp created_at?=now
+    timestamp created_at?=now {
+      visibility = "private"
+    }
   }
 
   index = [

@@ -3,7 +3,10 @@ table edit_record_issue {
 
   schema {
     int id
-    timestamp created_at?=now
+    timestamp created_at?=now {
+      visibility = "private"
+    }
+  
     text name? filters=trim
     object location? {
       schema {
