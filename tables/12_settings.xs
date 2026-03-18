@@ -6,5 +6,8 @@ table "⚙️Settings" {
     text name? filters=trim
   }
 
-  index = [{type: "primary", field: [{name: "id"}]}]
+  index = [
+    {type: "primary", field: [{name: "id"}]}
+    {type: "btree|unique", field: [{name: "name", op: "asc"}]}
+  ]
 }
