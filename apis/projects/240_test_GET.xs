@@ -21,7 +21,7 @@ query test verb=GET {
     }
   
     db.add "⚙️Settings" {
-      data = {name: "testttt"}
+      data = {name: "wow"}
     } as $_Settings1
   }
 
