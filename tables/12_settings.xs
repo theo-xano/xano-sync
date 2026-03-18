@@ -3,10 +3,6 @@ table "⚙️Settings" {
 
   schema {
     int id
-    timestamp created_at?=now {
-      visibility = "private"
-    }
-  
     text name? filters=trim
   }
 
