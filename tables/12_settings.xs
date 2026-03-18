@@ -10,8 +10,5 @@ table "⚙️Settings" {
     text name? filters=trim
   }
 
-  index = [
-    {type: "primary", field: [{name: "id"}]}
-    {type: "btree", field: [{name: "created_at", op: "desc"}]}
-  ]
+  index = [{type: "primary", field: [{name: "id"}]}]
 }
