@@ -1,7 +1,7 @@
 workflow_test "test3-query" {
   stack {
     db.add "⚙️Settings" {
-      data = {id: 1, name: "test"}
+      data = {name: "testtt"}
     }
   
     db.query "⚙️Settings" {
