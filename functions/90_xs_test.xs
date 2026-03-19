@@ -8,7 +8,7 @@ function "xs test" {
       value = []
     }
   
-    for (12 - ($var.x1|count)) {
+    for (2) {
       each {
         debug.log {
           value = "Yo yO!"
