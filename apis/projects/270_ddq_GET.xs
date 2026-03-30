@@ -5,11 +5,15 @@ query ddq verb=GET {
   }
 
   stack {
-    db.direct_query {
-      sql = "SELECT * FROM x1_33;"
-      parser = "template_engine"
-      response_type = "list"
-    } as $x1
+    for (10) {
+      each as $index {
+        db.direct_query {
+          sql = "SELECT * FROM x1_33;"
+          parser = "template_engine"
+          response_type = "list"
+        } as $x1
+      }
+    }
   }
 
   response = $x1
