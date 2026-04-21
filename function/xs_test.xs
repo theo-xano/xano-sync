@@ -4,11 +4,11 @@ function "xs test" {
   }
 
   stack {
-    var $x1 {
+    !var $x1 {
       value = []
     }
   
-    for (2) {
+    !for (2) {
       each {
         debug.log {
           value = "Yo yO!"
@@ -19,6 +19,15 @@ function "xs test" {
         }
       }
     }
+  
+    action.call "" {
+      input = {
+        input_text: "dsdsds"
+        model     : "text-embedding-3-large"
+      }
+    
+      registry = {openai_api_key: "jknkjbnkbkbj"}
+    } as $action1
   }
 
   response = $x1
