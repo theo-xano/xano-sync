@@ -20,5 +20,4 @@ query "_emoji/{_emoji_id}" verb=GET {
   }
 
   response = $model
-  middleware = {pre: []}
 }
