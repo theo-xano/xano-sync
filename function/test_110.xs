@@ -3,7 +3,7 @@ function test_110 {
   }
 
   stack {
-    !db.query content {
+    db.query content {
       return = {type: "list"}
     } as $content1
   }
