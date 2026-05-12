@@ -10,17 +10,12 @@ query "edit_record_issue/{edit_record_issue_id}" verb=PATCH {
   }
 
   stack {
-    util.get_raw_input {
-      encoding = "json"
-      exclude_middleware = false
-    } as $raw_input
-  
-    db.patch edit_record_issue {
+    db.edit edit_record_issue {
       field_name = "id"
       field_value = $input.edit_record_issue_id
-      data = `$input|pick:($raw_input|keys)`|filter_null|filter_empty_text
-    } as $model
+      data = {active: $input.active}
+    } as $edit_record_issue1
   }
 
-  response = $model
+  response = $input.edit_record_issue_id
 }
