@@ -3,7 +3,10 @@ function test_110 {
   }
 
   stack {
+    db.query content {
+      return = {type: "list"}
+    } as $content1
   }
 
-  response = null
+  response = $func1
 }
