@@ -1,6 +1,7 @@
 // Get 🅵Emoji record
 query "_emoji/{_emoji_id}" verb=GET {
   api_group = "first test"
+  auth = "user"
 
   input {
     int _emoji_id? filters=min:1
@@ -19,4 +20,5 @@ query "_emoji/{_emoji_id}" verb=GET {
   }
 
   response = $model
+  middleware = {pre: [{name: "test 1"}]}
 }
