@@ -6,7 +6,7 @@ function check_missing_records {
 
   stack {
     // Ensure the record exists and update all properties in one roundtrip
-    !db.add_or_edit "table_name with a space" {
+    db.add_or_edit "table_name with a space" {
       field_name = "id"
       field_value = 1
       data = {
