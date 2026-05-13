@@ -11,9 +11,7 @@ query customers verb=GET {
       return = {type: "list"}
     } as $content3
   
-    function.run check_missing_records {
-      runtime_mode = "async-shared"
-    } as $func1
+    function.run check_missing_records as $func1
   }
 
   response = $content3
