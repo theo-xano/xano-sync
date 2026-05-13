@@ -10,13 +10,7 @@ query "edit_record_issue/some_endpoint/save" verb=POST {
 
   stack {
     db.add edit_record_issue {
-      data = {
-        created_at: "now"
-        name      : $input.name
-        location  : $input.location
-        metadata  : $input.metadata
-        active    : $input.active
-      }
+      data = {created_at: "now", active: $input.active}
     } as $model
   }
 
