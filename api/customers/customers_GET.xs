@@ -6,16 +6,6 @@ query customers verb=GET {
   }
 
   stack {
-    !db.query content {
-      where = $db.content.id == 2
-      return = {type: "list"}
-    } as $content1
-  
-    !db.query content {
-      where = $db.content.id == 1
-      return = {type: "list"}
-    } as $content2
-  
     db.query content {
       where = $db.content.id == 3
       return = {type: "list"}
