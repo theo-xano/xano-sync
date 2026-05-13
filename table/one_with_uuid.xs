@@ -6,6 +6,8 @@ table one_with_uuid {
     timestamp created_at?=now {
       visibility = "private"
     }
+  
+    text name? filters=trim
   }
 
   index = [
