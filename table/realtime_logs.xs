@@ -6,6 +6,10 @@ table realtime_logs {
     timestamp created_at?=now {
       visibility = "private"
     }
+  
+    uuid? one_with_uuid_id? {
+      table = "one_with_uuid"
+    }
   }
 
   index = [
