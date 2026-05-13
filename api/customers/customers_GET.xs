@@ -1,7 +1,6 @@
 // Query all customers records
 query customers verb=GET {
   api_group = "Customers"
-  auth = "user"
 
   input {
   }
