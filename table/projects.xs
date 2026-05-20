@@ -11,8 +11,12 @@ table projects {
     text description? filters=trim
     int duration_in_weekss?
     object[] object_list? {
-      schema
+      schema {
+        text id? filters=trim
+      }
     }
+  
+    json[] jsonList?
   }
 
   index = [
