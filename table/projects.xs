@@ -13,6 +13,7 @@ table projects {
     object[] object_list? {
       schema {
         text id? filters=trim
+        text name? filters=trim
       }
     }
   
