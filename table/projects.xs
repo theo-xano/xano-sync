@@ -10,6 +10,9 @@ table projects {
     text name? filters=trim
     text description? filters=trim
     int duration_in_weekss?
+    object[] object_list? {
+      schema
+    }
   }
 
   index = [
