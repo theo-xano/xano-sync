@@ -18,6 +18,7 @@ table projects {
     }
   
     json[] jsonList?
+    json test?
   }
 
   index = [
