@@ -19,6 +19,9 @@ table projects {
   
     json[] jsonList?
     json test?
+    object testtt? {
+      schema
+    }
   }
 
   index = [
